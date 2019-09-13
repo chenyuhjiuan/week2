@@ -64,7 +64,6 @@ public class BurritoOrder {
                             numberOfElements));
 
 
-
                 System.out.println(" \t$" + (3 + (0.5 * numberOfElements)));
             }
         }
@@ -89,8 +88,15 @@ public class BurritoOrder {
                     int randomIndex = rand.nextInt(list.size());
 
                     newList.add(list.get(randomIndex));
+                    /*
+                    if(newList.get(0).equalsIgnoreCase("no rice")&&!newList.isEmpty()) {
 
+                        randomIndex=randomIndex-1;
+                    }
 
+                    if(list.get(2).equalsIgnoreCase("no beans")&&!newList.isEmpty())
+                    { randomIndex=randomIndex-1;}
+*/
                     // Remove selected element from orginal list
                     list.remove(randomIndex);
                 }
